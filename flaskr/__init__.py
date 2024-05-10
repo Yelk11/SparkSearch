@@ -31,7 +31,7 @@ def create_app(test_config=None):
         # if request.method == "POST":
         #     search_form = request.form.get("search_form")
         #     return "Your name is " + search_form
-        return render_template('new_index.html')
+        return render_template('index.html')
 
     
     db.init_app(app)
