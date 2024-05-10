@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <div class="center-bar">
+        <div class="title">
+            <h1>Spark</h1>
+        </div>
+        <div class="form">
+            <form action="{{ url_for("hello")}}" method="post">
+                <label for="fname">Search:</label>
+                <input type="text" id="fname" name="search_form">
+            </form>
+        </div>
+        
+    </div>
+    {{ bootstrap.load_js() }}
+</body>
+</html>
